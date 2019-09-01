@@ -6,9 +6,6 @@
 
 Created a bot that receives commands from the CLI and outputs the response in the console and log.txt file.
 
-## Live link
-Open the live link at https://fredsgithubaccount.github.io/My-Updated-Portfolio/
-
 ### Technologies
 Back-End
 - [ ] JavaScript
@@ -31,4 +28,4 @@ Back-End
 ```
 ### Requirements
 
-- API keys from Spotify & Twitter
+- API keys from Spotify & Twitterx
