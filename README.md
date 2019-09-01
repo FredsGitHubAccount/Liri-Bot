@@ -4,25 +4,31 @@
 
 ## Objective 
 
-Created 
+Created a bot that receives commands from the CLI and outputs the response in the console and log.txt file.
 
 ## Live link
 Open the live link at https://fredsgithubaccount.github.io/My-Updated-Portfolio/
 
 ### Technologies
-Front-End
-- [ ] HTML
-- [ ] CSS
+Back-End
 - [ ] JavaScript
-- [ ] Bootstrap
-- [ ] Firebase
-
+- [ ] Node.js
+- [ ] NPM Packages
+- [ ] Spotify API
+- [ ] Twitter API
 
 
 ### Setup 
 ```
-1. git clone https://github.com/FredsGitHubAccount/My-Updated-Portfolio.git
-2. cd My-Updated-Portfolio
-3. Open index.html in web browser
+1. git clone https://github.com/FredsGitHubAccount/Liri-Bot.git
+2. cd Liri-Bot
+3A. node liri.js spotify-this-song '<song name here>'
+3B. node liri.js movie-this '<movie name here>'
+3C. node liri.js my-tweets
+3C. node liri.js do-what-it-says
+4. Review results in the log.txt file or console
 
 ```
+### Requirements
+
+- API keys from Spotify & Twitter
