@@ -80,14 +80,14 @@ function callSpotify(song) {
 
 // OMBD Segment
 function callOmdb() {
-  console.log(userRequestInfo)
+
   userRequestInfo = process.argv.slice(3).join("+")
 
   if (userRequestInfo == "") {
     userRequestInfo = "Mr.Nobody"
   }
 
-  console.log(userRequestInfo)
+
   request(`http://www.omdbapi.com/?t=${userRequestInfo}&y=&plot=short&apikey=trilogy`, function (err, data) {
     if (err) {
       return console.log('Error occurred: ' + err);
