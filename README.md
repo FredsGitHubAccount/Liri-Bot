@@ -29,4 +29,4 @@ Back-End
 ```
 ### Requirements
 
-- API keys from Spotify & Twitterx
+- API keys from Spotify & Twitter
