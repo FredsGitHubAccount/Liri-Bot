@@ -18,7 +18,7 @@ Back-End
 ### Setup 
 ```
 1. git clone https://github.com/FredsGitHubAccount/Liri-Bot.git
-2. cd Liri-Bot
+2. cd Liri-Bot in your console
 3. npm install 
 4A. node liri.js spotify-this-song '<song name here>'
 4B. node liri.js movie-this '<movie name here>'
