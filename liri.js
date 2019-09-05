@@ -6,6 +6,8 @@ let Spotify = require('node-spotify-api');
 let Twitter = require('twitter')
 let request = require('request');
 let fs = require('fs')
+let axios = require('axios')
+let moment = require('moment')
 
 // Exported credentials
 let spotify = new Spotify(keys.spotify);
@@ -130,6 +132,31 @@ function doWhatItSays() {
   })
 }
 
+function callConcert() {
+  let artist = userRequestInfo
+  let URL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
+
+  axios.get(URL).then(function(response) {
+    let data = response.data[0]
+
+    console.log(`Venue Name : ${data.venue.name}`)
+    console.log(`Venue Location : ${data.venue.city},${data.venue.region},${data.venue.country}`)
+    console.log(`Event Date : ${moment(data.datetime).format("MM/DD/YYYY")}`)
+
+    let venue = data.venue.name
+    let location = `${data.venue.city},${data.venue.region},${data.venue.country}`
+    let date = `${moment(data.datetime).format("MM/DD/YYYY")}`
+
+    fs.appendFile("log.txt",`${`\r`}Venue Name : ${venue}${`\r`}Venue Location (City,State,Country) : ${location}${`\r`}Event Date : ${date}${"\r"}`,function(err){
+      if(err) return console.log(err)
+    })
+
+  })
+
+
+
+}
+
 
 // Commands to call liri & corresponding functions
 if (userRequest === "spotify-this-song") {
@@ -144,4 +171,6 @@ if (userRequest === "spotify-this-song") {
   doWhatItSays()
 } else if (userRequest === "my-tweets") {
   callTwitter()
+} else if (userRequest === "concert-this") {
+  callConcert()
 }
