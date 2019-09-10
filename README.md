@@ -8,7 +8,6 @@ Created a bot that receives commands from the CLI and outputs the response in th
 
 ### Technologies
 Back-End
-- [ ] JavaScript
 - [ ] Node.js
 - [ ] NPM Packages
 - [ ] Spotify API
@@ -18,7 +17,7 @@ Back-End
 ### Setup 
 ```
 1. git clone https://github.com/FredsGitHubAccount/Liri-Bot.git
-2. cd Liri-Bot in your console
+2. cd Liri-Bot in your terminal
 3. npm install 
 4A. node liri.js spotify-this-song '<song name here>'
 4B. node liri.js movie-this '<movie name here>'
