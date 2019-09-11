@@ -19,8 +19,7 @@ Back-End
 
 ### Video Demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wKsQK6p8SRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+[![Watch the video]](https://www.youtube.com/watch?v=wKsQK6p8SRY&feature=youtu.be)
 
 ### Setup 
 ```
