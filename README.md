@@ -18,8 +18,7 @@ Back-End
 - [ ] Twitter API
 
 ### Video Demo
-
-[![Watch the video]](https://www.youtube.com/watch?v=wKsQK6p8SRY&feature=youtu.be)
+[![Liri-Bot Demo](https://img.youtube.com/vi/wKsQK6p8SRY/0.jpg)](https://www.youtube.com/watch?v=wKsQK6p8SRY)
 
 ### Setup 
 ```
