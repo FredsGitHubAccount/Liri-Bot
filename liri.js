@@ -153,7 +153,32 @@ function callConcert() {
 
   })
 
+}
 
+// Used switch statements for liri logic
+switch (userRequest) {
+
+  case "spotify-this-song":
+    if (userRequestInfo) {
+      return callSpotify(userRequestInfo)
+
+    }
+    else {
+      return callSpotify("The Sign Ace of Base")
+    }
+
+  case "movie-this":
+    return callOmdb()
+
+  case "do-what-it-says":
+    return doWhatItSays()
+
+  case "my-tweets":
+    return callTwitter()
+
+
+  case "concert-this":
+    return callConcert()
 
 }
 
@@ -175,27 +200,3 @@ function callConcert() {
 //   callConcert()
 // }
 
-switch (userRequest) {
-
-  case "spotify-this-song":
-    if (userRequestInfo) {
-      return callSpotify(userRequestInfo)
-
-    }
-    else {
-      return callSpotify("The Sign Ace of Base")
-    }
-
-  case "movie-this":
-    return callOmdb()
-
-  case "do-what-it-says":
-    return doWhatItSays()
-
-  case "my-tweets":
-    return callTwitter()
-
-  case "concert-this":
-    return callConcert()
-
-}

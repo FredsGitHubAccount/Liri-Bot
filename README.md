@@ -6,6 +6,10 @@
 
 Created a bot that receives commands from the CLI and outputs the response in the console and log.txt file.  The user will be able to get information about a specific twitter account, song information within the Spotify library, upcoming concerts based on a specific artist, and movie information within the OMDB (Open Movie Database).
 
+## Screenshot
+![Screenshot](/ss/liri.png)
+
+
 ## Code Structure
 
 The app was broken down into a few functions that will execute based on what the user typed into the CLI.  Each API call was stored in seperate functions so each segment of the application can be easily modified in an organized manner.  
