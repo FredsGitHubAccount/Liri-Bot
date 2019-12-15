@@ -127,9 +127,8 @@ function callOmdb() {
 
 function doWhatItSays() {
   fs.readFile("random.txt", "utf8", function (err, data) {
-    let datasplit = data.split(",")
-    callSpotify(datasplit[1])
-  })
+callSpotify(data)  
+})
 }
 
 function callConcert() {
@@ -168,17 +167,20 @@ switch (userRequest) {
     }
 
   case "movie-this":
-    return callOmdb()
+     callOmdb()
+     break;
 
   case "do-what-it-says":
-    return doWhatItSays()
+     doWhatItSays()
+     break;
 
   case "my-tweets":
-    return callTwitter()
-
+     callTwitter()
+     break;
 
   case "concert-this":
-    return callConcert()
+     callConcert()
+     break;
 
 }
 
